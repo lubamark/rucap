@@ -2,22 +2,17 @@
   vertical-align: middle;
   padding-top: 10px;
   padding-bottom: 10px;
-  &__list {
+  ul.page-numbers {
     @include list-reset;
     display: inline-block;
     vertical-align: middle;
   }
 
-  &__item {
+  li {
     display: inline-block;
-    &._active {
-      .pagination__link {
-        color: $blue;
-      }
-    }
   }
 
-  &__link {
+  a.page-numbers {
     display: block;
     padding-right: 9px;
     padding-left: 9px;
@@ -35,6 +30,10 @@
     &:focus {
       text-decoration: underline;
       text-decoration-color: $blue;
+    }
+
+    &.current {
+      color: $blue;
     }
 
   }

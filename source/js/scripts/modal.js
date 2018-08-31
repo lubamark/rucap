@@ -35,17 +35,20 @@ Popup.prototype.init = function(){
     $(document).on('show.popup', function(e){
         var container = e.targetId;
         var elem = e.elem;
-
-
         if(container === cmp.popupContainer.attr('id')) {
             cmp.show();
         }
+    });
+
+    $(document).on('submit.success', function(e) {
+        cmp.content.hide();
+        $('.j-modal-success').show();
     });
     $(document).on('close.popup', function(e){
         cmp.hide();
     });
     $(document).on('keydown', function(e) {
-      if (e.target.keyCode = 27) {
+      if (e.target.keyCode === 27) {
         cmp.hide();
       }
     });

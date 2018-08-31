@@ -20,7 +20,7 @@
 </head>
 <body>
 <!-- Header-->
-<header class="page-header">
+<header class="page-header j-padded-element">
   <div class="container">
     <nav class="page-nav">
       <div class="page-nav__logo"><a><img src="img/logo.svg" alt="ruCap" width="140" height="66"></a></div>
@@ -254,7 +254,7 @@
             <p class="feedback-form__caption">
                 Заполните форму и наши специалисты свяжутся с вами
             </p>
-            <form action="#" method="post" class="form">
+            <form action="#" method="post" class="form" id="feedback-form">
                 <div class="form__field">
                     <label for="feedback-name" class="visually-hidden">Имя</label>
                     <input type="text" class="form__input _error" placeholder="Имя" id="feedback-name" name="name" required>
@@ -275,7 +275,7 @@
             </form>
         </div>
     </div>
-      <div style="display: none;" class="j-modal-inner" data-id="success">
+    <div style="display: none;" class="j-modal-success" data-id="success">
           <h3 class="feedback-form__title">Успешно!</h3>
           <p class="feedback-form__caption">
               Наши специалисты свяжутся с вами по указанным контактам

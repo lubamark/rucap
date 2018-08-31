@@ -1,0 +1,114 @@
+.form {
+  &__field {
+    position: relative;
+    margin-bottom: 16px;
+  }
+
+  &__input {
+    width: 100%;
+    max-width: 360px;
+
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 13px;
+
+    font-family: $lato;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 300;
+    color: $black;
+
+    border-radius: 22px;
+    border: 1px solid $border-gray;
+    &::placeholder {
+      opacity: 1;
+      color: $gray;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #f9f9f9;
+    }
+
+    &._error {
+      border-color: #ffb4b4;
+      background-color: #fef8f8;
+      color: #f45252;
+      &::placeholder {
+        color: rgba(#f45252, 0.7);
+      }
+    }
+  }
+
+  &__checkbox {
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    margin-left: 1px;
+    cursor: pointer;
+    &:hover {
+      + .form__checkbox-label::after {
+        content: '';
+        opacity: 0.5;
+      }
+    }
+    &:checked +.form__checkbox-label::after {
+      opacity: 1;
+    }
+
+    &:checked {
+      &:hover {
+        + .form__checkbox-label::after {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+
+  &__checkbox-label {
+    position: absolute;
+    left: 0;
+    padding-left: 30px;
+    padding-right: 50px;
+    font-size: 11px;
+    line-height: 16px;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      border: 1px solid $border-gray;
+      border-radius: 2px;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 5px;
+      opacity: 0;
+
+      width: 5px;
+      height: 8px;
+      border-right: 2px solid $green;
+      border-bottom: 2px solid $green;
+      transform-origin: center;
+      transform: rotate(45deg);
+      transition: opacity 0.2s ease;
+
+    }
+
+    &._error {
+      color: #f45252;
+
+      &:before {
+        border-color: #ffb4b4;
+        background-color: #fef8f8;
+      }
+    }
+  }
+}

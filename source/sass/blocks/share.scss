@@ -1,0 +1,65 @@
+.share {
+  padding-top: 35px;
+  border-top: 1px solid $border-gray;
+
+
+  &__list {
+    @include list-reset;
+    display: inline-block;
+
+  }
+
+  &__item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+
+  &__link {
+    text-decoration: none;
+    display: block;
+
+    &--vk {
+      &:hover,
+      &:focus {
+        svg path {
+          fill: #6190c5;
+        }
+      }
+    }
+    &--fb {
+      &:hover,
+      &:focus {
+        svg path {
+          fill: #1f78cc;
+        }
+      }
+    }
+    &--ok {
+      &:hover,
+      &:focus {
+        svg path {
+          fill: #fa8546;
+        }
+      }
+    }
+    &--twee {
+      &:hover,
+      &:focus {
+        svg path {
+          fill: #62d1f3;
+        }
+      }
+    }
+  }
+
+  &__caption {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    color: $gray;
+    vertical-align: top;
+  }
+}

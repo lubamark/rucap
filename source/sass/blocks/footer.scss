@@ -1,0 +1,87 @@
+.footer {
+  margin-top: 50px;
+  padding: 50px 0 50px 0;
+  text-align: center;
+  color: $white;
+  background-color: #132199;
+
+  background-image:
+    linear-gradient(to right, rgba(#0b113d, 0.46) 0%, rgba(#081dbd, 0.05) 68%),
+    url('../img/footer-bg.jpg');
+  background-repeat: no-repeat, repeat;
+  background-position: top left, top left;
+
+
+  .container {
+    position: relative;
+    &::before,
+    &:after {
+      content: '';
+      position: absolute;
+    }
+
+    &::before {
+      top: 65px;
+      left: -205px;
+      width: 17px;
+      height: 17px;
+      background: url('../img/footer-before.png') no-repeat top left;
+    }
+
+    &::after {
+      top: -73px;
+      left: 40px;
+      width: 36px;
+      height: 36px;
+      background: url('../img/footer-after.png') no-repeat top left;
+    }
+  }
+
+  &__button {
+    margin-bottom: 35px;
+  }
+
+  &__caption {
+    width: 590px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+  }
+
+  &__contacts {
+    width: 550px;
+    margin-bottom: 43px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    font-size: 32px;
+    line-height: 40px;
+    color: $blue;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+    white-space: nowrap;
+  }
+
+  &__copyright {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 700;
+    color: $blue;
+  }
+
+  &__address {
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 300;
+    color: $blue;
+  }
+}

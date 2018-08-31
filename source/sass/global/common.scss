@@ -1,0 +1,247 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-width: 1060px;
+  width: 100%;
+
+  box-sizing: border-box;
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  color: $black;
+
+  //&._menu {
+  //  height: 100vh;
+  //  right: 17px;
+  //  overflow: hidden;
+  //  &::before {
+  //    content: '';
+  //    position: fixed;
+  //    margin: 0;
+  //    top: 0;
+  //    left: 0;
+  //    width: 100%;
+  //    height: 100%;
+  //    z-index: 10;
+  //
+  //    background-color: #2A2A2A;
+  //    opacity: 0.9;
+  //  }
+  //
+  //  @media screen and (min-width: $laptop-width) {
+  //    height: auto;
+  //    overflow-y: visible;
+  //    overflow-x:hidden;
+  //    padding: 0;
+  //    &::before {
+  //      content: none;
+  //    }
+  //  }
+
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+*:focus,
+*:hover {
+  outline: none;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 32px;
+  font-size: 44px;
+  line-height: 49px;
+  font-weight: 400;
+}
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 1060px;
+}
+
+.button {
+  position: relative;
+  padding: 15px 40px;
+
+  display: inline-block;
+  text-align: center;
+  font-family: $lato;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 900;
+  letter-spacing: .1rem;
+
+  color: $white;
+  background-color: $blue;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 22px;
+  transition: all 0.4s ease;
+
+  &:hover,
+  &:focus {
+    background-color: $blue;
+  }
+
+  &.button--arrow {
+    padding-right: 35px;
+    &::after {
+      content: '';
+      position: absolute;
+      right: 23px;
+      top: calc(50% - 4px);
+      width: 7px;
+      height: 7px;
+      border-bottom: 2px solid $white;
+      border-right: 2px solid $white;
+      transform-origin: center;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &--green {
+    background-color: $green;
+    box-shadow: 0 10px 16px 0 rgba(#5effb8, 0.17);
+    &:hover,
+    &:focus {
+      background-color: #1aca7c;
+    }
+
+    &.button--arrow {
+      padding-right: 57px;
+      &::after {
+        border-color: $white;
+      }
+    }
+  }
+
+  &--gray {
+    color: $gray-text;
+    background-color: #f9fcff;
+    background-image: linear-gradient(
+                    to right,
+                    rgba(0, 0, 0, 0.1) 0%,
+                    rgba(0, 0, 0, 0.05) 90%);
+
+    &:hover,
+    &:focus {
+      background-color: #eaeaeb;
+      background-image: none;
+    }
+    &.button--arrow {
+      padding-right: 35px;
+      &::after {
+        border-color: $elem-gray;
+      }
+    }
+
+    transition: background-image 0.6s ease;
+  }
+
+  &--blue {
+    background-color: #7294fc;
+    color: $white;
+    box-shadow: 0 10px 16px 0 rgba(#c4d0f4, 0.17);
+    &:hover,
+    &:focus {
+      background-color: $blue;
+    }
+  }
+
+  &--20 {
+    padding: 20px 80px;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 31px;
+  }
+
+  &--16 {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 17px 50px;
+    border-radius: 29px;
+  }
+
+  &--14 {
+    padding: 15px 40px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 900;
+    letter-spacing: .06rem;
+    &.button--arrow {
+      padding-right: 57px;
+      &::after {
+        border-color: $white;
+        border-width: 3px;
+        top: calc(50% - 6px);
+        height: 10px;
+        width: 10px;
+      }
+    }
+
+
+  }
+  &--12 {
+    padding: 9px 30px 11px 30px;
+    text-transform: none;
+    letter-spacing: 0.01rem;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    border-radius: 16px;
+
+    &.button--arrow {
+      padding-right: 40px;
+      &::after {
+        content: '';
+        position: absolute;
+        top: calc(50% - 4px);
+        right: 15px;
+      }
+    }
+  }
+  &--wide {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+  }
+}
+
+
+
+

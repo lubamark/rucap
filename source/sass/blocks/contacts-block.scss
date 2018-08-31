@@ -1,0 +1,28 @@
+.contacts-block {
+  @include gray-block;
+  margin-bottom: 32px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 600;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+
+  &__link {
+    @include blue-link;
+    display: block;
+    font-size: 22px;
+    line-height: 36px;
+    font-weight: 700;
+  }
+}

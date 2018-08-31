@@ -1,0 +1,52 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin black-link {
+  color: $black;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $blue;
+  }
+}
+
+@mixin gray-link {
+  color: $gray;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $blue;
+  }
+}
+
+@mixin title {
+  font-size: 44px;
+  line-height: 50px;
+  font-weight: 400;
+}
+
+
+@mixin blue-link {
+  color: $blue;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+@mixin shadow-block {
+  background-color: $white;
+  box-shadow: 0px 2px 20px 0px rgba(60, 99, 217, 0.2);
+
+}
+
+@mixin gray-block {
+  background-color: #fafafd;
+}

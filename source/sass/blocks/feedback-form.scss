@@ -1,0 +1,40 @@
+.feedback-form {
+  text-align: left;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 46px;
+    line-height: 46px;
+    font-weight: 400;
+  }
+
+  &__caption {
+    margin: 0;
+    margin-bottom: 35px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+
+  .form__field--checkbox {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .form__checkbox-label {
+    display: inline-block;
+    padding-right: 0;
+
+    &::before {
+      top: 0;
+    }
+    &::after {
+      top: 3px;
+    }
+  }
+
+
+}

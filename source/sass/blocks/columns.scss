@@ -1,0 +1,25 @@
+.columns {
+  .container {
+    display: flex;
+  }
+  &__main {
+    width: 668px;
+    margin-right: 55px;
+    h1 {
+      margin-top: 22px;
+      margin-bottom: 20px;
+      font-size: 37px;
+      line-height: 49px;
+      font-weight: 400;
+    }
+  }
+
+  &__aside {
+    margin-top: 35px;
+    width: 300px;
+  }
+
+  &__wrapper-aside {
+    padding: 25px 25px 35px 25px;
+  }
+}

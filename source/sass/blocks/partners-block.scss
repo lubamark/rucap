@@ -1,0 +1,37 @@
+.partners-block {
+  @include gray-block;
+  margin-bottom: 35px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 600;
+  }
+
+  &__caption {
+    margin: 0;
+    margin-bottom: 12px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+
+  &__tel {
+    @include black-link;
+    font-weight: 700;
+  }
+
+  &__mail {
+    @include blue-link;
+  }
+}

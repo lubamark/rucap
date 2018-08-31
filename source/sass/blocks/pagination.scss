@@ -1,0 +1,89 @@
+.pagination {
+  vertical-align: middle;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  &__list {
+    @include list-reset;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__item {
+    display: inline-block;
+    &._active {
+      .pagination__link {
+        color: $blue;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    padding-right: 9px;
+    padding-left: 9px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: 400;
+    text-decoration: none;
+    color: $black;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      text-decoration-color: $blue;
+    }
+
+  }
+
+  &__control {
+    vertical-align: middle;
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #f9fcff;
+    background-image: linear-gradient(
+                    to right,
+                    rgba(0, 0, 0, 0.1) 0%,
+                    rgba(0, 0, 0, 0.0) 100%);
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    &:hover,
+    &:focus {
+      background-image: none;
+      background-color: #eaeaeb;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+
+      bottom: 12px;
+      width: 7px;
+      height: 7px;
+      transform-origin: center;
+      transform: rotate(-45deg);
+    }
+
+    &--prev {
+      margin-right: 8px;
+      &::after {
+        right: 10px;
+        border-top: 2px solid $elem-gray;
+        border-left: 2px solid $elem-gray;
+      }
+    }
+    &--next {
+      margin-left: 8px;
+      &::after {
+        right: 12px;
+        border-bottom: 2px solid $elem-gray;
+        border-right: 2px solid $elem-gray;
+      }
+    }
+  }
+}

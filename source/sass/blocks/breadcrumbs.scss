@@ -1,0 +1,41 @@
+.breadcrumbs {
+  padding: 10px;
+
+  &__list {
+    @include list-reset;
+  }
+
+  &__item {
+    position: relative;
+
+    display: inline-block;
+    margin-right: 20px;
+
+    &::after {
+      content: '—';
+      position: absolute;
+      top: 0;
+      right: -19px;
+      color: $gray;
+    }
+
+    &:last-child {
+      &::after {
+        content: none;
+      }
+      .breadcrumbs__link {
+        pointer-events: none;
+      }
+    }
+  }
+
+
+
+  &__link {
+    @include gray-link;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,11 @@
+.page-main {
+  background: url('../img/bg.png') no-repeat top center;
+  padding-top: 190px;
+  min-height: calc(100vh - 448px);
+
+  &--inner {
+    padding-top: 160px;
+    padding-bottom: 126px;
+    background: none;
+  }
+}

@@ -65,7 +65,6 @@
       }
     }
   }
-
   &__checkbox-label {
     position: absolute;
     left: 0;
@@ -111,4 +110,21 @@
       }
     }
   }
+}
+
+.wpcf7-not-valid {
+  border-color: #ffb4b4 !important;
+  background-color: #fef8f8 !important;
+  color: #f45252 !important;
+  &::placeholder {
+    color: rgba(#f45252, 0.7) !important;
+  }
+}
+
+span.wpcf7-not-valid-tip {
+  display:none !important;
+}
+
+.wpcf7-validation-errors {
+  border: none !important;
 }

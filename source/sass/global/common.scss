@@ -110,6 +110,12 @@ h1 {
   border: none;
   border-radius: 22px;
   transition: all 0.4s ease;
+  
+  &._disabled {
+    background-color: $elem-gray;
+    pointer-events: none;
+    box-shadow: none;
+  }
 
   &:hover,
   &:focus {

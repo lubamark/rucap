@@ -254,7 +254,7 @@
             <p class="feedback-form__caption">
                 Заполните форму и наши специалисты свяжутся с вами
             </p>
-            <form action="#" method="post" class="form" id="feedback-form">
+            <form action="#" method="post" class="form j-form" id="feedback-form">
                 <div class="form__field">
                     <label for="feedback-name" class="visually-hidden">Имя</label>
                     <input type="text" class="form__input _error" placeholder="Имя" id="feedback-name" name="name" required>
@@ -268,10 +268,10 @@
                     <input type="tel" class="form__input" placeholder="Телефон" id="feedback-tel" name="tel" required>
                 </div>
                 <div class="form__field form__field--checkbox">
-                    <input type="checkbox" class="form__checkbox" id="feedback-agree" name="agree" required>
+                    <input type="checkbox" class="form__checkbox j-required-checkbox" id="feedback-agree" name="agree" required>
                     <label for="feedback-agree" class="form__checkbox-label">Я согласен на обработку персональных данных</label>
                 </div>
-                <button type="submit" class="button button--green button--16 button--wide">Отправить</button>
+                <button type="submit" class="button button--green button--16 button--wide j-submit">Отправить</button>
             </form>
         </div>
     </div>

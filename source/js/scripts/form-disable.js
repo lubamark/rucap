@@ -9,11 +9,10 @@ $(document).ready(function () {
             $submitForm.prop('disabled', true);
             $requiredCheckbox.on('change', function () {
                 $submitForm.toggleClass('_disabled');
-                $submitForm.prop('disabled', function (val) {
+                $submitForm.prop('disabled', function (i, val) {
                     return !val;
                 });
             });
         }
     });
 });
-git 

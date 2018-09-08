@@ -123,6 +123,10 @@ Popup.prototype.hide = function (){
         cmp.paddedElem.removeAttr('style');
         cmp.fixedElem.removeAttr('style');
         // cmp.content.html('');
+        if (cmp.popup.find('.j-form')[0]) {
+            cmp.popup.find('.j-form')[0].reset();
+        }
+
         $.event.trigger({type: 'popup.closed'});
         $.event.trigger({type: 'default'});
     });

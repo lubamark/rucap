@@ -63,3 +63,32 @@
     vertical-align: top;
   }
 }
+
+.ya-share2__container_size_m .ya-share2__icon {
+  width: 19px !important;
+  height: 20px !important;
+}
+ .ya-share2__badge {
+  background-color: transparent !important;
+}
+
+.ya-share2__icon {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+
+.ya-share2__item_service_vkontakte .ya-share2__icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19.87' height='19.87'%3E%3Cpath d='M9.94 0a9.94 9.94 0 1 0 9.94 9.93A9.933 9.933 0 0 0 9.94 0zm5.21 13.95l-1.64.03a1.164 1.164 0 0 1-.82-.25c-.62-.43-1.2-1.53-1.65-1.38a1.343 1.343 0 0 0-.45 1.13.521.521 0 0 1-.1.33.609.609 0 0 1-.34.14h-.73a4.224 4.224 0 0 1-3.06-1.39A20.157 20.157 0 0 1 3.42 7.7a.394.394 0 0 1 0-.31.657.657 0 0 1 .37-.12l1.76-.01a.668.668 0 0 1 .28.11.566.566 0 0 1 .16.21 11.058 11.058 0 0 0 .66 1.37c.73 1.27 1.08 1.55 1.33 1.41.36-.19.25-1.79.25-1.79a1.778 1.778 0 0 0-.18-.84.878.878 0 0 0-.55-.28c-.1-.01.06-.24.28-.34a3.78 3.78 0 0 1 1.53-.16 3.426 3.426 0 0 1 .87.08c.61.15.4.72.4 2.08a1.573 1.573 0 0 0 .24 1.25c.13.08.46.01 1.29-1.39a10.847 10.847 0 0 0 .68-1.45.562.562 0 0 1 .17-.2.42.42 0 0 1 .24-.04l1.85-.01a.722.722 0 0 1 .65.18c.09.27-.21.88-.97 1.89-1.24 1.66-1.38 1.51-.35 2.47a5.783 5.783 0 0 1 1.23 1.41c.41.68-.46.73-.46.73z' fill='%234f749e' fill-rule='evenodd'%3E%3C/path%3E%3C/svg%3E") !important;
+}
+
+.ya-share2__item_service_facebook .ya-share2__icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19.88' height='19.87'%3E%3Cpath d='M9.94 0a9.94 9.94 0 1 0 9.94 9.93A9.931 9.931 0 0 0 9.94 0zm2.35 6.86H10.8a.51.51 0 0 0-.38.55v1.08h1.87v1.53h-1.87v4.63H8.66v-4.63h-1.6V8.49h1.6v-.91a2.214 2.214 0 0 1 2.14-2.35h1.49v1.63z' fill='%231361aa' fill-rule='evenodd'%3E%3C/path%3E%3C/svg%3E") !important;
+}
+
+.ya-share2__item_service_odnoklassniki .ya-share2__icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19.9' height='19.87'%3E%3Cpath d='M9.95 8.01A1.41 1.41 0 1 0 8.54 6.6a1.408 1.408 0 0 0 1.41 1.41zm0-8.01a9.94 9.94 0 1 0 9.94 9.93A9.931 9.931 0 0 0 9.95 0zm0 3.73A2.87 2.87 0 1 1 7.09 6.6a2.876 2.876 0 0 1 2.86-2.87zm2.55 7.39a4.693 4.693 0 0 1-1.99.59l.46.46 1.68 1.69a.652.652 0 0 1 0 .93l-.07.08a.67.67 0 0 1-.93 0l-1.69-1.69-1.69 1.69a.7.7 0 0 1-.46.19.7.7 0 0 1-.47-.19l-.08-.08a.67.67 0 0 1 0-.93l1.69-1.69.46-.45a4.991 4.991 0 0 1-2.01-.6c-.71-.46-1.03-.74-.75-1.3a.72.72 0 0 1 1.2-.13 3.815 3.815 0 0 0 4.2 0 .73.73 0 0 1 1.21.13c.28.56-.04.84-.76 1.3z' fill='%23fe7327' fill-rule='evenodd'%3E%3C/path%3E%3C/svg%3E") !important;
+}
+
+.ya-share2__item_service_twitter .ya-share2__icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19.87' height='19.87'%3E%3Cpath d='M9.94 0a9.94 9.94 0 1 0 9.94 9.93A9.94 9.94 0 0 0 9.94 0zm4.04 8.14v.25a5.566 5.566 0 0 1-8.57 4.69 3.708 3.708 0 0 0 .47.03 3.89 3.89 0 0 0 2.43-.84 1.949 1.949 0 0 1-1.83-1.36 2.206 2.206 0 0 0 .37.04 2.247 2.247 0 0 0 .52-.07A1.954 1.954 0 0 1 5.8 8.96v-.03a1.875 1.875 0 0 0 .88.25 1.967 1.967 0 0 1-.87-1.63 1.894 1.894 0 0 1 .27-.98 5.554 5.554 0 0 0 4.03 2.04 2.138 2.138 0 0 1-.05-.45 1.966 1.966 0 0 1 3.39-1.34 3.88 3.88 0 0 0 1.24-.47 1.93 1.93 0 0 1-.86 1.08 3.647 3.647 0 0 0 1.13-.31 4.136 4.136 0 0 1-.98 1.02z' fill='%2318bdef' fill-rule='evenodd'%3E%3C/path%3E%3C/svg%3E") !important;
+}

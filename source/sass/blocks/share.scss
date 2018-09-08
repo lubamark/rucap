@@ -64,6 +64,14 @@
   }
 }
 
+
+/// Ya share
+
+.ya-share2__item:hover,
+.ya-share2__item:focus {
+  opacity: 0.8 !important;
+}
+
 .ya-share2__container_size_m .ya-share2__icon {
   width: 19px !important;
   height: 20px !important;

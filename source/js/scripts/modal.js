@@ -40,10 +40,16 @@ Popup.prototype.init = function(){
         }
     });
 
-    $(document).on('submit.success', function(e) {
+    $(document).on('success', function(e) {
         cmp.content.hide();
         $('.j-modal-success').show();
     });
+
+    $(document).on('default', function (e) {
+        cmp.content.show();
+        $('.j-modal-success').hide();
+    })
+
     $(document).on('close.popup', function(e){
         cmp.hide();
     });
@@ -118,6 +124,7 @@ Popup.prototype.hide = function (){
         cmp.fixedElem.removeAttr('style');
         // cmp.content.html('');
         $.event.trigger({type: 'popup.closed'});
+        $.event.trigger({type: 'default'});
     });
 };
 getScrollBarWidth = function() {
